@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Answer Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="neon-text">Answer Strength Checker</h1>
+
+    <textarea id="answer" placeholder="Type your answer here..." class="neon-input"></textarea>
+
+    <button id="checkBtn" onclick="checkAnswer()" class="neon-btn">
+      <span class="btn-text">Check Strength</span>
+      <span class="spinner" style="display:none;">⏳</span>
+    </button>
+
+    <div class="results-container">
+      <div id="score" class="neon-result">Score: 0/10</div>
+      <div id="feedback" class="neon-result">Feedback will appear here.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
